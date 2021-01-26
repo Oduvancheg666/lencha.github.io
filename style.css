@@ -1,0 +1,92 @@
+h1 {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 0;
+	font-family: 'Marck Script', cursive;
+}
+
+h3 {
+	text-align: center;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 20px;
+}
+
+.navbar {
+	font-size: 14px;
+	justify-content: center;
+
+}
+
+.nav-link{
+	margin: 5px 15px;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+
+
+.navbar-nav .nav-item:first-child .nav-link {
+    padding-left: 0;
+}
+
+body {
+	background-color: #F8F9FA;
+}
+
+.row {
+	margin-top: 40px;
+}
+
+
+footer {
+	margin-top: 20px;
+}
+hr {
+	margin-top: 20px;
+}
+
+.fab {
+	font-size: 40px;
+	color: black;
+	margin-bottom: 25px;
+	padding: 0 10px;
+}
+
+.fab:hover {
+	color: gray;
+}
+
+.by {
+	text-align: center;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 12px;
+}
+
+@media (max-width: 900px){
+.aboutText {
+	margin-top: 20px;
+}}
+
+.carousel-caption {
+	top: 50%;
+	transform: translateY(-50%);
+	background: rgb(76,0,255, 0.5);
+	bottom: initial;
+
+}
+.carousel-inner{
+	height: 110vh;
+	Display: block;
+	Max-width: 100%;
+	margin: auto;
+
+
+}
+
+
+
+@media (max-width: 992px) {  
+	.navbar {
+		justify-content: flex-end;
+		}}
+
