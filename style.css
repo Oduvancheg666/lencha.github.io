@@ -38,6 +38,7 @@ body {
 
 .row {
 	margin-top: 40px;
+
 }
 
 
@@ -93,4 +94,16 @@ hr {
 	.about-text{
 		margin-top: 20px;
 	}
+}
+
+#contacts {
+	color: #767676;
+	font-size: 20px;
+	font-family: Poiret One;
+	text-align: center;
+	margin-top: 15%;
+}
+
+.mail {
+	text-decoration: none;
 }
