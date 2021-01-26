@@ -4,6 +4,9 @@ h1 {
 	margin-bottom: 0;
 	font-family: 'Marck Script', cursive;
 }
+.about-text {
+	font-size: 18px;
+}
 
 h3 {
 	text-align: center;
@@ -62,10 +65,6 @@ hr {
 	font-size: 12px;
 }
 
-@media (max-width: 900px){
-.aboutText {
-	margin-top: 20px;
-}}
 
 .carousel-caption {
 	top: 50%;
@@ -75,12 +74,9 @@ hr {
 
 }
 .carousel-inner{
-	height: 110vh;
 	Display: block;
 	Max-width: 100%;
 	margin: auto;
-
-
 }
 
 
@@ -88,5 +84,13 @@ hr {
 @media (max-width: 992px) {  
 	.navbar {
 		justify-content: flex-end;
-		}}
+		}
 
+	}
+
+@media (max-width: 766px) {
+
+	.about-text{
+		margin-top: 20px;
+	}
+}
