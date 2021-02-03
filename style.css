@@ -6,6 +6,7 @@ h1 {
 }
 .about-text {
 	font-size: 18px;
+	font-family: 'Source Code Pro', monospace;
 }
 
 h3 {
@@ -17,16 +18,12 @@ h3 {
 .navbar {
 	font-size: 14px;
 	justify-content: center;
-
 }
 
 .nav-link{
 	margin: 5px 15px;
 	font-family: 'Open Sans Condensed', sans-serif;
 }
-
-
-
 
 .navbar-nav .nav-item:first-child .nav-link {
     padding-left: 0;
@@ -38,6 +35,7 @@ body {
 
 .row {
 	margin-top: 40px;
+	margin-left: 10px;
 
 }
 
@@ -82,19 +80,7 @@ hr {
 
 
 
-@media (max-width: 992px) {  
-	.navbar {
-		justify-content: flex-end;
-		}
 
-	}
-
-@media (max-width: 766px) {
-
-	.about-text{
-		margin-top: 20px;
-	}
-}
 
 #contacts {
 	color: #767676;
@@ -107,4 +93,37 @@ hr {
 .mail {
 	text-decoration: none;
 	color: #767676;
+}
+
+.thumb {
+	margin-top: 10px;
+}
+
+span {
+	height: 225px;
+}
+
+#about {
+	margin: 20px;
+}
+img {
+	width: 40%;
+	float: left;
+	margin: 5px 20px 20px 0 ;
+}
+
+
+@media (max-width: 992px) {  
+	.navbar {
+		justify-content: flex-start;
+		margin-left: 10px;
+		}
+	.about-text{
+		margin-top: 20px;
+	}
+	img {
+		width: 100%;
+		float: none;
+	}
+
 }
