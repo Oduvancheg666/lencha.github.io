@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="style.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>
 <body>
 	<h1>Елена Сотникова</h1> 
@@ -21,7 +22,7 @@
 		    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 		      <div class="navbar-nav">
 		        <a class="nav-link active" aria-current="page" href="index.html">ГЛАВНАЯ</a>
-		        <a class="nav-link" href="#">ПОРТФОЛИО</a>
+		        <a class="nav-link" href="portfolio.html">ПОРТФОЛИО</a>
 		        <a class="nav-link" href="contacts.html">КОНТАКТЫ</a>
 		        <a class="nav-link" href="index.html#about">ОБО МНЕ</a>
 		      </div>
@@ -62,7 +63,7 @@
 	<div class="container">
 	  <div id="about">
 	    <div class="about-img img-fluid" >
-	    <img src="img/E.Sotnikova.png" >
+	    <img id="aboutPhoto" src="img/E.Sotnikova.png" >
 	    </div>
 	    <div class="about-text ">
 	      		<p>Меня зовут Елена! Снимаю свадьбы с 2015 года и очень люблю свою работу!
@@ -71,23 +72,15 @@
 				На нашу первую встречу, на которой мы обсудим все детали и нюансы предстоящего события, я обязательно возьму с собой фотокамеру!)
 				Да да, при первой же встрече вы ощутите на себе, какого это быть и существовать перед объективом!) Расскажу и покажу основные позы и фишки! Я подарю Вам маленькую Love Story! Благодаря этому в день свадьбы, Вы будете чувствовать себя намного увереннее перед камерой и не будете тушеваться и переживать по пустякам!</p>
 				<p>
-				Так же мы обсудим все моменты предстоящего дня - от сборов невесты до праздничного фейерверка в Вашу честь!</p>
-				<p>
-				Спланируем тайминг дня практически поминутно, ведь в такой важный день везде нужно быть вовремя!</p>
-				<p>
+				Так же мы обсудим все моменты предстоящего дня - от сборов невесты до праздничного фейерверка в Вашу честь!
+				Спланируем тайминг дня практически поминутно, ведь в такой важный день везде нужно быть вовремя!
 				Наметим маршрут передвижения и локации для съёмок!
-				</p>
-				<p>
 				Поговорим обо всём и ничего не упустим!
-				</p>
-				<p>
 				Я дам вам множество советов и поделюсь всеми фишками, чтобы ничего не могло омрачить самый счастливый день в Вашей жизни!
 				</p>
 				<p>
 				<strong>Стоимость</strong> свадебной фотосъёмки :
 				<strong>От 2500-3500 руб./час </strong>
-				</p>
-				<p>
 				Длительность съёмки и наполнение пакета обговариваются и разрабатываются индивидуально для каждой пары, исходя из пожеланий и возможностей молодых.
 				</p>
 				<p>
@@ -104,7 +97,7 @@
 	    </div>
   </div>
 </div>
- <hr>
+<div id="goTop"><img src="img/top.png" width="30px" height="30px" /></div>
 	<footer >
 		<div class="row">
 	    	<div class="col-md text-center">
@@ -112,14 +105,27 @@
 	    		<a href="https://vk.com/n.e.l.l.i750" target="_blank"><i class="fab fa-vk"></i></a>
 	    	</div>
 		</div>
-		<div class="by">by oduvancheg666 2021</div>
+		<div class="by">© 2021</div>
 
 	</footer>
 
 	
 
 
-
+	<script type="text/javascript">
+          $(function() {
+        $(window).scroll(function() {
+        if($(this).scrollTop() != 0) {
+        $('#goTop').fadeIn();
+        } else {
+        $('#goTop').fadeOut();
+        }
+        });
+        $('#goTop').click(function() {
+        $('body,html').animate({scrollTop:0},700);
+        });
+        });
+  	</script>
 	<script src="https://kit.fontawesome.com/57b1da27ae.js" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>

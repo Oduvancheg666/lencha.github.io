@@ -1,3 +1,9 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+}
+
 h1 {
 	text-align: center;
 	margin-top: 50px;
@@ -41,7 +47,15 @@ body {
 
 
 footer {
-	margin-top: 20px;
+	border-top: 2px solid;
+  	width: 95%;
+	margin-top: 40px;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+
+	text-align: center;
+
+
 }
 hr {
 	margin-top: 20px;
@@ -99,15 +113,13 @@ hr {
 	margin-top: 10px;
 }
 
-span {
-	height: 225px;
-}
+
 
 #about {
 	margin: 20px;
 }
-img {
-	width: 40%;
+#aboutPhoto {
+	width: 45%;
 	float: left;
 	margin: 5px 20px 0 0 ;
 }
@@ -121,9 +133,16 @@ img {
 	.about-text{
 		margin-top: 20px;
 	}
-	img {
+	#aboutPhoto {
 		width: 100%;
 		float: none;
 	}
 
 }
+
+#goTop {
+	position: fixed;
+	left: 85%;
+	top: 90%;
+	opacity: 0.44; 
+   }
